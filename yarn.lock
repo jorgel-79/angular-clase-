@@ -96,12 +96,31 @@
     rxjs "6.4.0"
     source-map "0.7.3"
 
+"@angular-devkit/core@8.0.6":
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.0.6.tgz#540ff673f1808fc09538c8aa6c01f08750921301"
+  integrity sha512-gbKEVsQuYqBJPzgaxEitvs0aN9NwmUHhTkum28mRyPbS3witay/q8+3ls48M2W+98Da/PQbfndxFY4OCa+qHEA==
+  dependencies:
+    ajv "6.10.0"
+    fast-json-stable-stringify "2.0.0"
+    magic-string "0.25.2"
+    rxjs "6.4.0"
+    source-map "0.7.3"
+
 "@angular-devkit/schematics@8.0.3":
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.0.3.tgz#533cf328344d114c0d1aaf1b6ba479f94ad5d47e"
   integrity sha512-Oj1VLsTEJhzAZjKWEjHXLMKD8B0Qp+3vaozYM22bNIfxP9B1XyUSPPv3UhhRhWusm4T6GRDvMVVLQ1k3mkusuA==
   dependencies:
     "@angular-devkit/core" "8.0.3"
+    rxjs "6.4.0"
+
+"@angular-devkit/schematics@8.0.6":
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.0.6.tgz#e50805582f4a082079201dffd8940e001f3721e0"
+  integrity sha512-FGPcVKxNvtdFB0A6oHyxtWeugL83nW+kPATlAimgh1hu7TCP94dDpflCV9o/lgZlH817xTYXrhToXJaMZSnDPw==
+  dependencies:
+    "@angular-devkit/core" "8.0.6"
     rxjs "6.4.0"
 
 "@angular/animations@^8.0.2":
@@ -214,10 +233,28 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/pwa@^0.800.4":
+  version "0.800.6"
+  resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-0.800.6.tgz#d228d90d9d27c37431c68c7d899a7c6f9a579552"
+  integrity sha512-wGTQQsUTkDfsWnbyNC1ALi3uFhCRpo98sbll7oGr6SGXd0CkBl2LqE4AHTXq4/YLdxs/PiMvVXg/zZDHVRZW/w==
+  dependencies:
+    "@angular-devkit/core" "8.0.6"
+    "@angular-devkit/schematics" "8.0.6"
+    "@schematics/angular" "8.0.6"
+    parse5-html-rewriting-stream "5.1.0"
+    rxjs "6.4.0"
+
 "@angular/router@~8.0.1":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-8.0.2.tgz#0c20a462e52dd9519f40b735cc756408a440c52c"
   integrity sha512-kgSqkvx3cgY0+ZTzkBVLa0sf0y0Fl7q3N+KX746pbCNjRRGa5gBkN7z+oyPDoG1l0fEiM6NLbFfcmuFwsdBO5w==
+  dependencies:
+    tslib "^1.9.0"
+
+"@angular/service-worker@~8.0.1":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-8.0.3.tgz#30f5b8c8822376ad28f546eafb88c92dca1eccae"
+  integrity sha512-sP7b2eb/wzNIb8CUUQ8NnNl0fvL67neRwbImRKNaMhvikKuDv8iyW4Jy3Jx1p60szgaIUIf+cHbciN/N/rO3YQ==
   dependencies:
     tslib "^1.9.0"
 
@@ -327,6 +364,14 @@
   dependencies:
     "@angular-devkit/core" "8.0.3"
     "@angular-devkit/schematics" "8.0.3"
+
+"@schematics/angular@8.0.6":
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.0.6.tgz#13b81ac1130396dc9676f8119e9d10cc7f615237"
+  integrity sha512-F0/MrbvrJQJIjt0GwEkmf9PZUX0xQlCjlDcH6U7yBni0/+R5Gd5g3G0f12fsSa2iAwpwrLkKpiQluj29eFituQ==
+  dependencies:
+    "@angular-devkit/core" "8.0.6"
+    "@angular-devkit/schematics" "8.0.6"
 
 "@schematics/update@0.800.3":
   version "0.800.3"
@@ -1075,10 +1120,10 @@ bluebird@^3.3.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
   integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
 
-bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.9:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
 body-parser@1.19.0, body-parser@^1.16.1:
   version "1.19.0"
@@ -1137,7 +1182,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-brorand@^1.0.1:
+brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
@@ -2137,17 +2182,17 @@ electron-to-chromium@^1.3.124, electron-to-chromium@^1.3.164:
   integrity sha512-bHgFvYeHBiQNNuY/WvoX37zLosPgMbR8nKU1r4mylHptLvuMMny/KG/L28DTIlcoOCJjMAhEimy3DHDgDayPbg==
 
 elliptic@^6.0.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
-  integrity sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
+  integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
   dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
+    bn.js "^4.11.9"
+    brorand "^1.1.0"
     hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
+    hmac-drbg "^1.0.1"
+    inherits "^2.0.4"
+    minimalistic-assert "^1.0.1"
+    minimalistic-crypto-utils "^1.0.1"
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -2923,7 +2968,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-hmac-drbg@^1.0.0:
+hmac-drbg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
   integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
@@ -3131,7 +3176,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -4086,7 +4131,7 @@ minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
-minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
+minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
@@ -4680,6 +4725,21 @@ parse-json@^4.0.0:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
 
+parse5-html-rewriting-stream@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/parse5-html-rewriting-stream/-/parse5-html-rewriting-stream-5.1.0.tgz#63f92c958764aea8cbe3aa68f2e5895c32068ab8"
+  integrity sha512-hZlaOTHJs4dpC5yFHnOSEMh26ErsqTsLzxKqkuRcUqtiu0kMsBQ9pkgANkECDyoBUhJ3+hvb2DPLsyqbtcS61Q==
+  dependencies:
+    parse5 "^5.1.0"
+    parse5-sax-parser "^5.1.0"
+
+parse5-sax-parser@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5-sax-parser/-/parse5-sax-parser-5.1.1.tgz#02834a9d08b23ea2d99584841c38be09d5247a15"
+  integrity sha512-9HIh6zd7bF1NJe95LPCUC311CekdOi55R+HWXNCsGY6053DWaMijVKOv1oPvdvPTvFicifZyimBVJ6/qvG039Q==
+  dependencies:
+    parse5 "^5.1.1"
+
 parse5@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
@@ -4689,6 +4749,11 @@ parse5@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
   integrity sha512-fxNG2sQjHvlVAYmzBZS9YlDp6PTSSDwa98vkD4QgVDDCAo84z5X1t5XyJQ62ImdLXx5NdIIfihey6xpum9/gRQ==
+
+parse5@^5.1.0, parse5@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parseqs@0.0.5:
   version "0.0.5"
